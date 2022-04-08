@@ -6,9 +6,9 @@ variable "vpc_cidr" {
   default = "190.160.0.0/16"
 }
 
-variable "subnet_cidr" {
-  default = "190.160.1.0/24"
-}
+# variable "subnet_cidr" {
+#   default = "190.160.1.0/24"
+# }
 
 variable "ami_id" {
   default = "ami-0e472ba40eb589f49"
