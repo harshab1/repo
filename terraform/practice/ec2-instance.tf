@@ -50,6 +50,7 @@ resource "aws_instance" "sample-server" {
   instance_type = "t2.micro"
   subnet_id = aws_subnet.subnets.id
   security_groups = [aws_security_group.allow_ssh.id]
+  associate_public_ip_address = true
   credit_specification {
     cpu_credits = "standard"
   }
